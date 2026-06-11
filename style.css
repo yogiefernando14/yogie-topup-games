@@ -107,18 +107,21 @@ h2{
 .promo-slider::after{
   content:"";
   position:absolute;
-  top:0;
+
+  left:0;
   right:0;
-  width:25px;
-  height:100%;
-  z-index:5;
-  pointer-events:none;
+  bottom:0;
+
+  height:60px;
 
   background:linear-gradient(
-    to left,
-    #18122f,
+    to top,
+    rgba(0,0,0,.65),
     transparent
   );
+
+  pointer-events:none;
+  z-index:10;
 }
 
 .slider-track{
@@ -132,11 +135,13 @@ h2{
 .slider-dots{
   position:absolute;
   left:50%;
-  bottom:15px;
+  bottom:12px;
   transform:translateX(-50%);
+
   display:flex;
-   gap:8px;
-  z-index:10;
+  gap:8px;
+
+  z-index:20;
 }
 
 .dot{
