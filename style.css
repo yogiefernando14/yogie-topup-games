@@ -160,11 +160,12 @@ h2{
 .slide{
    flex:0 0 100%;
    min-width:100%;
-   padding:0 8px;
+   flex:0 0 100%;
 }
 
 .slide img{
-  width:100%;
+  width:94%;
+  margin:auto;
   aspect-ratio:16/9;
   object-fit:contain;
    border-radius:24px;
