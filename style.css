@@ -145,7 +145,7 @@ z-index:1;
 
 .slide{
    flex:0 0 100%;
-   min-width:100%
+   min-width:100%;
 }
 
 .slide img{
