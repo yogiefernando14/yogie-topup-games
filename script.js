@@ -88,3 +88,15 @@ categoryButtons.forEach(button => {
   });
 
 });
+
+.category-list button.active{
+
+  background:#7c3aed;
+
+  color:white;
+
+  box-shadow:
+
+    0 0 20px rgba(124,58,237,.25);
+
+}
