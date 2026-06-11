@@ -90,6 +90,26 @@ h2{
   transition:transform .5s ease;
 }
 
+.slider-dots{
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  margin-top:12px;
+}
+
+.dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:rgba(255,255,255,.3);
+  transition:.3s;
+}
+
+.dot.active{
+  background:#8b5cf6;
+  transform:scale(1.2);
+}
+
 .slide{
   min-width:100%;
 }
