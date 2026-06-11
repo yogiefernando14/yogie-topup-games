@@ -104,9 +104,27 @@ categoryButtons.forEach(button => {
 }
 
 .marquee-track span{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
   white-space:nowrap;
+
   color:#cbd5e1;
   font-size:14px;
+
+  padding:10px 16px;
+
+  background:rgba(255,255,255,.04);
+
+  border:1px solid rgba(255,255,255,.05);
+
+  border-radius:999px;
+}
+
+.marquee-track i{
+  font-size:18px;
+  color:#8b5cf6;
 }
 
 @keyframes marquee{
