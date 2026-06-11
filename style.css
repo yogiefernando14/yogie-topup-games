@@ -85,7 +85,7 @@ h2{
 }
 
 .slide{
-  display:block;
+  display:none;
    border-radius:20px;
   overflow:hidden;
 }
