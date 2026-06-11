@@ -121,6 +121,34 @@ h2{
   display:block;
 }
 
+.slider-prev,
+.slider-next{
+  position:absolute;
+
+  top:50%;
+  transform:translateY(-50%);
+
+  width:36px;
+  height:36px;
+
+  border:none;
+  border-radius:50%;
+
+  background:rgba(0,0,0,.4);
+
+  color:white;
+
+  z-index:10;
+}
+
+.slider-prev{
+  left:10px;
+}
+
+.slider-next{
+  right:10px;
+}
+
 /* ====================
    SEARCH
 ==================== */
