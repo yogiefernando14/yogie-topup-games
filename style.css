@@ -101,16 +101,16 @@ h2{
 }
 
 .dot{
-  width:10px;
-  height:10px;
+  width:7px;
+  height:7px;
   border-radius:50%;
   background:rgba(255,255,255,.3);
   transition:.3s;
 }
 
 .dot.active{
-  background:#8b5cf6;
-  transform:scale(1.2);
+  background:#ffffff;
+  transform:scale(1.15);
 }
 
 .slide img{
