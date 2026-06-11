@@ -91,10 +91,13 @@ h2{
 }
 
 .slider-dots{
+  position:absolute;
+  left:50%;
+  bottom:15px;
+  transform:translateX(-50%);
   display:flex;
-  justify-content:center;
-  gap:8px;
-  margin-top:12px;
+  gap:6px;
+  z-index:5;
 }
 
 .dot{
