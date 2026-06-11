@@ -87,7 +87,7 @@ h2{
 
 .slider-track{
   display:flex;
-  transition:transform .5s ease;
+  transition:transform .8s cubic-bezier(.4,0,.2,1);
 }
 
 .slider-dots{
