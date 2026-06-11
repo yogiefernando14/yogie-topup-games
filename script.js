@@ -87,3 +87,4 @@ categoryButtons.forEach(button => {
 
   });
 
+});
