@@ -323,7 +323,7 @@ footer{
 
   width:max-content;
 
-  animation:marquee 18s linear infinite;
+  animation:marquee 20s linear infinite;
 }
 
 .marquee-track span{
