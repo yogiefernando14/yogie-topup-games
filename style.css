@@ -291,8 +291,6 @@ footer{
     repeat(3,1fr);
   }
 
-}
-
 .category-list button.active{
 
   background:#7c3aed;
