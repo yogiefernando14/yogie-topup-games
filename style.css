@@ -127,7 +127,7 @@ h2{
 .slider-dots{
   position:absolute;
   left:50%;
-  bottom:20px;
+  bottom:12px;
   transform:translateX(-50%);
   z-index:20;
 }
