@@ -108,10 +108,8 @@ h2{
     rgba(0,0,0,.65),
 
     transparent
-     z-index:1;
-
   );
-
+z-index:1;
   pointer-events:none;
 
 }
