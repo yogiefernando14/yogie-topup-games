@@ -307,3 +307,60 @@ footer{
     0 0 20px rgba(124,58,237,.25);
 
 }
+
+/* ====================
+   FEATURES MARQUEE
+==================== */
+
+.features-marquee{
+  overflow:hidden;
+  margin:15px 20px 25px;
+}
+
+.marquee-track{
+  display:flex;
+  align-items:center;
+  gap:16px;
+
+  width:max-content;
+
+  animation:marquee 18s linear infinite;
+}
+
+.marquee-track span{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  white-space:nowrap;
+
+  padding:10px 16px;
+
+  background:rgba(255,255,255,.04);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:999px;
+
+  color:#e2e8f0;
+
+  font-size:14px;
+  font-weight:500;
+}
+
+.marquee-track i{
+  font-size:18px;
+  color:#8b5cf6;
+}
+
+@keyframes marquee{
+
+  from{
+    transform:translateX(100%);
+  }
+
+  to{
+    transform:translateX(-100%);
+  }
+
+}
