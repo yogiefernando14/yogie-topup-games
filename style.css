@@ -120,15 +120,9 @@ h2{
 }
 
 .game-card{
-  background:#1a2142;
-
+  background:#211942;
   border:1px solid rgba(255,255,255,.05);
-
   border-radius:18px;
-
-  overflow:hidden;
-
-  transition:.25s ease;
 }
 
 .game-card:hover{
