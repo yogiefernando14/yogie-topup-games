@@ -84,6 +84,7 @@ h2{
   overflow:hidden;
   margin:20px;
    border-radius:20px;
+   width:calc(100% - 40px);
 }
 
 .slider-track{
