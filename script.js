@@ -2,33 +2,41 @@
 // PROMO SLIDER
 // ======================
 
-const slides = document.querySelectorAll(".slide");
+const track = document.querySelector(".slider-track");
+
+const dots = document.querySelectorAll(".dot");
 
 let currentSlide = 0;
 
-if (slides.length > 0) {
+function updateSlider() {
 
-  slides.forEach((slide, index) => {
-    if (index !== 0) {
-      slide.style.display = "none";
-    }
+  track.style.transform =
+
+    `translateX(-${currentSlide * 100}%)`;
+
+  dots.forEach(dot => {
+
+    dot.classList.remove("active");
+
   });
 
-  setInterval(() => {
-
-    slides[currentSlide].style.display = "none";
-
-    currentSlide++;
-
-    if (currentSlide >= slides.length) {
-      currentSlide = 0;
-    }
-
-    slides[currentSlide].style.display = "block";
-
-  }, 4000);
+  dots[currentSlide].classList.add("active");
 
 }
+
+setInterval(() => {
+
+  currentSlide++;
+
+  if (currentSlide >= dots.length) {
+
+    currentSlide = 0;
+
+  }
+
+  updateSlider();
+
+}, 4000);
 
 // ======================
 // SEARCH GAME
@@ -88,53 +96,3 @@ categoryButtons.forEach(button => {
   });
 
 });
-
-.features-marquee{
-  overflow:hidden;
-  margin:15px 20px 25px;
-}
-
-.marquee-track{
-  display:flex;
-  gap:30px;
-
-  width:max-content;
-
-  animation:marquee 15s linear infinite;
-}
-
-.marquee-track span{
-  display:flex;
-  align-items:center;
-  gap:8px;
-
-  white-space:nowrap;
-
-  color:#cbd5e1;
-  font-size:14px;
-
-  padding:10px 16px;
-
-  background:rgba(255,255,255,.04);
-
-  border:1px solid rgba(255,255,255,.05);
-
-  border-radius:999px;
-}
-
-.marquee-track i{
-  font-size:18px;
-  color:#8b5cf6;
-}
-
-@keyframes marquee{
-
-  from{
-    transform:translateX(100%);
-  }
-
-  to{
-    transform:translateX(-100%);
-  }
-
-}
