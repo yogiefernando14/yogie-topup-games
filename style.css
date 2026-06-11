@@ -87,6 +87,34 @@ h2{
    width:calc(100% - 40px);
 }
 
+.promo-slider::after{
+
+  content:"";
+
+  position:absolute;
+
+  left:0;
+
+  right:0;
+
+  bottom:0;
+
+  height:80px;
+
+  background:linear-gradient(
+
+    to top,
+
+    rgba(0,0,0,.65),
+
+    transparent
+
+  );
+
+  pointer-events:none;
+
+}
+
 .slider-track{
   display:flex;
 
