@@ -124,6 +124,10 @@ h2{
   background:#211942;
   border:1px solid rgba(255,255,255,.05);
   border-radius:18px;
+overflow:hidden;
+transition:
+transform .25s ease,
+border-color .25s ease;
 }
 
 .game-card:hover{
